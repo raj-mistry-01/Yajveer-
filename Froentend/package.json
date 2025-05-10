@@ -1,0 +1,27 @@
+{
+  "name": "froentend",
+  "version": "1.0.0",
+  "description": "Yajveer Ayurvedic Powder",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rishi-Kukadiya/Yajveer-.git"
+  },
+  "author": "Rishi-Kukadiya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rishi-Kukadiya/Yajveer-/issues"
+  },
+  "homepage": "https://github.com/Rishi-Kukadiya/Yajveer-#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.6.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}
