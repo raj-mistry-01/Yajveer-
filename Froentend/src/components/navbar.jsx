@@ -1,8 +1,8 @@
 import React from "react";
 import "../CSS/navbar.css";
-import Logo from "../assets/yajveer-logo.jpg";
 export default function Navbar() {
       return (
+        <>
         <nav className="navbar">
           <div className="navbar-left">
             <p>Become A Seller</p>
@@ -26,5 +26,6 @@ export default function Navbar() {
             <button className="account-button">My Account</button>
           </div>
         </nav>
+        </>
       );
 }
