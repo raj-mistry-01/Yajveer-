@@ -10,7 +10,7 @@
 
 .logo{
     display: flex;
-    align-items: center;
+    align-items: center;  
     flex-wrap: wrap;
     justify-content: flex-start;
     height: 100%;
