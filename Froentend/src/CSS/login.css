@@ -133,7 +133,11 @@
   height: 25%;
 }
 
-
+.usm{
+   display: flex;
+  flex-direction: column;
+  height: 25%;
+}
 .newus{
   width: 100%;
   height: 15%;

@@ -2,6 +2,7 @@ import "../CSS/login.css";
 import Navbar from './navbar';
 import Navbar2 from './navbar2';
 import Ayur from "../assets/logp.jpg";
+import { Link } from "react-router";
 export default function Login(){
     return(
         <>
@@ -31,9 +32,12 @@ export default function Login(){
                                     <p>Forgot Your Password</p>
                                     <button>Login</button>
                                 </form>
+                                
                                 <div className="newus">
                                     <p className="ne">New User ? </p>
+                                    <Link to='/signUp'>
                                     <p className="ne1">SignUp</p>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
