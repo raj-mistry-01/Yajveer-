@@ -1,16 +1,16 @@
 import React from 'react'
 import reactDom from "react-dom/client";
-import Navbar from "./components/navbar";
-import Navbar2 from './components/navbar2';
-import MainNav from './components/mainnav';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import Login from './components/login';
+import { Routes, Route } from 'react-router';
+import Home from './components/home';
 
 const App = () => {
   return (
         <>
-        <Navbar></Navbar>
-        <Navbar2></Navbar2>
-        <MainNav></MainNav>
+        <Routes>
+            <Route path="/" element={<Home></Home>}></Route>
+            <Route path='/login' element={<Login></Login>}></Route>
+        </Routes>
         </>
     )
 }

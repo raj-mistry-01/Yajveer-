@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/navbar.css";
+import { Link } from "react-router";
 export default function Navbar() {
       return (
         <>
@@ -23,7 +24,9 @@ export default function Navbar() {
               </ul>
             </div>
             <i className="bi bi-person-circle"></i>
+            <Link to="/login">
             <button className="account-button">My Account</button>
+            </Link>
           </div>
         </nav>
         </>
