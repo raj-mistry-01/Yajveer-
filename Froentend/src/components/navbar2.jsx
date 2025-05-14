@@ -7,7 +7,6 @@ export default function Navbar2() {
         <div className="logo">
           <img src={Logo} alt="Yajveer" />
         </div>
-
         <div className="search">
           <div className="s1">
             <div className="list">

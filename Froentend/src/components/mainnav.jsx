@@ -1,4 +1,5 @@
 import "../CSS/MainNav.css";
+import { Link } from "react-router";
 export default function MainNav() {
   return (
     <>
@@ -23,9 +24,10 @@ export default function MainNav() {
 
         <div className="mid">
           <div className="home deep-inner-button">
+            <Link to='/'>
             <p>Home</p>
+            </Link>
           </div>
-
           <div className="dp deep-inner-button">
             <div className="title">
               <p>

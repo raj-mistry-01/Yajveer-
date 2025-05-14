@@ -3,11 +3,13 @@ import Navbar from './navbar';
 import Navbar2 from './navbar2';
 import Ayur from "../assets/logp.jpg";
 import { Link } from "react-router";
+import MainNav from "./mainnav";
 export default function Login(){
     return(
         <>
             <Navbar></Navbar>
             <Navbar2></Navbar2>
+            <MainNav></MainNav>
             <div className="log">
                     <div className="imgsec">
                         <img src={Ayur} alt="Yajveer" />
