@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <div className="mf">
-        <div className="info deep-inner-button">
+        <div className="info deep-inner-button1">
           <div className="info1">
             <div className="i1">
               <img src={Logo} alt="" className="logo" />
@@ -16,7 +16,6 @@ export default function Footer() {
                 support a healthier, balanced life.
               </p>
             </div>
-
             <div className="i3">
               <div className="ro">
                 <Link>
@@ -30,7 +29,6 @@ export default function Footer() {
             <div className="i4">
               <div className="ro">
                 <Link>
-                  {" "}
                   <i className="bi bi-telephone-fill me-2"></i>
                 </Link>
               </div>
@@ -44,7 +42,7 @@ export default function Footer() {
                   <i className="bi bi-geo-alt-fill me-2"></i>
                 </Link>
               </div>
-              <p>146 , M.G Dreams Complex , Kamrej</p>
+              <Link><p>146 , M.G Dreams Complex , Kamrej</p></Link>
             </div>
           </div>
 
@@ -58,13 +56,13 @@ export default function Footer() {
                 <p className="comp"><i className="bi bi-chat-dots fs-4"></i> Live Chat</p>
               </Link>
               <Link>
-                <p className="comp"><i className="bi bi-file-earmark-text fs-4"></i> Policies & Rules</p>
+                <p className="comp"><i className="bi bi-file-earmark-text fs-4"></i> Policies </p>
               </Link>
               <Link>
                 <p className="comp"><i className="bi bi-exclamation-circle fs-4"></i> Report Query</p>
               </Link>
               <Link>
-                <p className="comp"><i className="bi bi-question-circle fs-4"></i> FAQs</p>
+                <p className="comp"><i className="bi bi-question-circle fs-4"></i> FAQs </p>
               </Link>
             </div>
             <div className="myac">
@@ -108,24 +106,30 @@ export default function Footer() {
             </div>
             <div className="socn">
               <p className="hp">Social Network</p>
+               <Link>
               <div className="fac comp1">
                 <div className="ico">
                   <i className="bi bi-facebook fs-4"></i>
                 </div>
                 <p>Facebook</p>
               </div>
+              </Link>
+              <Link>
               <div className="insta comp1">
                 <div className="ico">
                   <i className="bi bi-instagram fs-4"></i>
                 </div>
                 <p>Instagram</p>
               </div>
+              </Link>
+              <Link>
               <div className="linkdin comp1">
                 <div className="ico">
                   <i className="bi bi-linkedin fs-4"></i>
                 </div>
                 <p>LinkedIn</p>
               </div>
+            </Link>
             </div>
           </div>
         </div>
