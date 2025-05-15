@@ -4,6 +4,7 @@ import Navbar2 from './navbar2';
 import Ayur from "../assets/logp.jpg";
 import { Link } from "react-router";
 import MainNav from "./mainnav";
+import Footer from "./Footer";
 export default function Login(){
     return(
         <>
@@ -45,6 +46,7 @@ export default function Login(){
                         </div>
                     </div>
             </div>
+            <Footer></Footer>
         </>
     )
 };
