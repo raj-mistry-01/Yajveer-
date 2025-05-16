@@ -4,10 +4,18 @@ import product4 from '../../assets/Moringa.jpg';
 import product3 from "../../assets/KJP.jpg";
 import product2 from "../../assets/Jamun.jpg";
 import product5 from "../../assets/B12P.jpg";
+import product6 from "../../assets/Diabetes.jpg";
 import "../../CSS/Home/slider.css";
 
 const Slider = () => {
   const slides = [
+     {
+      text: "Diabetsss Powder for Sugar Control",
+      subText: "Naturally support glucose levels with Diabetsss.",
+      buttonText: "Explore Shop",
+      buttonLink: "/shop",
+      image: product6,
+    },
     {
       text: "Pure Karela Power for Sugar Control",
       subText: "Support healthy glucose naturally with bitter melon.",

@@ -10,6 +10,13 @@ import product6 from "../../assets/PNG/YajveerDuuby.png";
 export default function Menu(){
 const products = [
   {
+    productID : 6 ,
+    name: "Diabetes Powder",
+    imageUrl: product6,
+    price: 120,
+    discount : 7
+  },
+  {
     productID : 1 ,
     name: "Karel Powder",
     imageUrl: product1,
@@ -43,12 +50,6 @@ const products = [
      imageUrl : product5 ,
      price : 100 ,
      discount : 4
-  },{
-    productID : 6 ,
-    name: "Diabetes Powder",
-    imageUrl: product6,
-    price: 120,
-    discount : 7
   }
 ];
 

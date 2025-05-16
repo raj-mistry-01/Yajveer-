@@ -5,10 +5,12 @@ import Ayur from "../assets/logp.jpg";
 import { Link } from "react-router";
 import MainNav from "./mainnav";
 import Footer from "./Footer";
+import Sidebar from "./Home/sidebar";
 export default function SignUp() {
   return (
     <>
       <>
+        <Sidebar></Sidebar>
         <Navbar></Navbar>
         <Navbar2></Navbar2>
         <MainNav></MainNav>
