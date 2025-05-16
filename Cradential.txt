@@ -1,0 +1,3 @@
+MongoUserName : Yajveer
+MongoPassword : _Yajveer@123
+MongoConnection : mongodb+srv://Yajveer:_Yajveer@123@yajveer.s7b91ej.mongodb.net/
