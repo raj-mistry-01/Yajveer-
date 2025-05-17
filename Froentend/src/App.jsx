@@ -4,6 +4,7 @@ import Login from './components/login';
 import { Routes, Route } from 'react-router';
 import Home from './components/home';
 import SignUp from './components/signup';
+import ReviewForm from './components/ReviewForm';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
             <Route path="/" element={<Home></Home>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/signUp' element={<SignUp></SignUp>}></Route>
+            <Route path="/reviewForm" element={<ReviewForm></ReviewForm>}></Route>
         </Routes>
         </>
     )

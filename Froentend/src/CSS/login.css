@@ -106,11 +106,11 @@
 }
 
 .logf p:hover {
-  color: green;
+  color: #22c55e;
 }
 
 .logf>button{
-  background-color: green;
+  background-color: #22c55e;
   width: 80%;
   height: 15%;
   border-radius: 10px;
@@ -150,7 +150,7 @@
 }
 
 .ne1:hover{
-  color: green;
+  color: #22c55e;
 }
 
 
