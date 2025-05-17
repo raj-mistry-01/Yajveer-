@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Navbar from './navbar';
 import Navbar2 from './navbar2';
 import MainNav from './mainnav';
@@ -5,12 +6,18 @@ import Slider from './Home/silder';
 import Footer from './Footer';
 import Menu from './Home/Menu';
 import Sidebar from './Home/sidebar';
+import Sidebar1 from './Home/sidebar1';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Home(){
+    const [isSidebarOpen, setSidebarOpen] = useState(false);
+    const handleOpenSidebar = () => setSidebarOpen(true);
+    const handleCloseSidebar = () => setSidebarOpen(false);
+
     return(
         <>
-            <Sidebar></Sidebar>
+            {isSidebarOpen && <Sidebar1 onClose={handleCloseSidebar} />}
+            <Sidebar onOpenSidebar={handleOpenSidebar} />
             <Navbar></Navbar>
             <Navbar2></Navbar2>
             <MainNav></MainNav>

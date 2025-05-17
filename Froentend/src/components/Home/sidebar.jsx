@@ -2,11 +2,11 @@ import "../../CSS/Home/sidebar.css";
 import Logo from "../../assets/Yajveer.png";
 import "../../CSS/font.css";
 import { Link } from "react-router";
-export default function sidebar(){
+export default function sidebar({ onOpenSidebar }){
     return(
         <>
             <div className="mn1">
-                <div className="threed">
+                <div className="threed" onClick={onOpenSidebar}>
                      <div className="threed1">
                               <i className="bi bi-list"></i>
                      </div>

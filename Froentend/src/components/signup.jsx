@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../CSS/login.css";
 import Navbar from "./navbar";
 import Navbar2 from "./navbar2";
@@ -6,11 +7,18 @@ import { Link } from "react-router";
 import MainNav from "./mainnav";
 import Footer from "./Footer";
 import Sidebar from "./Home/sidebar";
+import Sidebar1 from "./Home/sidebar1";
 export default function SignUp() {
+      const [isSidebarOpen, setSidebarOpen] = useState(false);
+      const handleOpenSidebar = () => setSidebarOpen(true);
+      const handleCloseSidebar = () => setSidebarOpen(false);
   return (
     <>
       <>
-        <Sidebar></Sidebar>
+        {/* <Sidebar1></Sidebar1>
+        <Sidebar></Sidebar> */}
+        {isSidebarOpen && <Sidebar1 onClose={handleCloseSidebar} />}
+        <Sidebar onOpenSidebar={handleOpenSidebar} />
         <Navbar></Navbar>
         <Navbar2></Navbar2>
         <MainNav></MainNav>
