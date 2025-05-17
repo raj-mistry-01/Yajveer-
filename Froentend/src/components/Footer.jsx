@@ -12,7 +12,7 @@ export default function Footer() {
             </div>
             <div className="i2">
               <p className="ab">
-                At Yajveer, we blend Ayurvedic tradition with modern purity to
+                At Yajveer, we blend ayurvedic tradition with modern purity to
                 support a healthier, balanced life.
               </p>
             </div>

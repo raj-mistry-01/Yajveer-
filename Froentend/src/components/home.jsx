@@ -7,6 +7,8 @@ import Footer from './Footer';
 import Menu from './Home/Menu';
 import Sidebar from './Home/sidebar';
 import Sidebar1 from './Home/sidebar1';
+import Marketing from './Home/Marketing';
+import ClientReview from './Home/ClientReview';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Home(){
@@ -23,6 +25,8 @@ export default function Home(){
             <MainNav></MainNav>
             <Slider></Slider>
             <Menu></Menu>
+            <Marketing></Marketing>
+            <ClientReview></ClientReview>
             <Footer></Footer>
         </>
     )
