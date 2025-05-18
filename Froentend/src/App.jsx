@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router';
 import Home from './components/home';
 import SignUp from './components/signup';
 import ReviewForm from './components/ReviewForm';
+import ProductDetails from './components/ProductDetails';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/signUp' element={<SignUp></SignUp>}></Route>
             <Route path="/reviewForm" element={<ReviewForm></ReviewForm>}></Route>
+            <Route path="/product/:id" element={<ProductDetails></ProductDetails>}></Route>
         </Routes>
         </>
     )

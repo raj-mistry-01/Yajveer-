@@ -76,9 +76,11 @@ const scrollRef = useRef(null);
                      {
                         products.map((product) => (
                             <div className="Menucard" key={product.productID}>
+                              <Link to={`/product/${product.productID}`}>
                                   <div className="menui">
                                      <img src={product.imageUrl} alt={product.name} className="ig"/>
                                   </div>
+                                  </Link>
                                   <div className="pname">
                                        <p>{product.name}</p>
                                   </div>
@@ -87,11 +89,11 @@ const scrollRef = useRef(null);
                                     <p className="dsp">₹{product.price}</p>
                                     <p className="acp">₹{product.price + (product.discount)*(product.price)}</p>
                                   </div>
+                                   <Link to={`/product/${product.productID}`}>
                                   <div className="menucart">
-                                      <Link>
-                                           <p>Buy Now</p>
-                                      </Link>
+                                     <p>Buy Now</p>
                                   </div>
+                                  </Link>
                             </div>
                         ))
                      }
