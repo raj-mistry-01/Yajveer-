@@ -7,7 +7,7 @@ export default function Navbar() {
         <nav className="navbar">
           <div className="navbar-left">
             <p>Become A Seller</p>
-            <p>About Us</p>
+             <Link to="/aboutUs"><p>About Us</p></Link>
             <p>Free Delivery</p>
             <p>Returns Policy</p>
           </div>
