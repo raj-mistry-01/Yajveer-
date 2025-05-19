@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router";
 import "../../CSS/Home/Menu.css";
-import product1 from '../../assets/PNG/karela1.png';
+import product1 from '../../assets/PNG/Karela1.png';
 import product4 from '../../assets/PNG/Moringa1.png';
 import product3 from "../../assets/PNG/KJP1.png";
 import product2 from "../../assets/PNG/Jamun1.png";
