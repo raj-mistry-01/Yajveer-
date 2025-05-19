@@ -9,6 +9,7 @@ import Sidebar from './Home/sidebar';
 import Sidebar1 from './Home/sidebar1';
 import Marketing from './Home/Marketing';
 import ClientReview from './Home/ClientReview';
+import Slider2 from './Home/Slider2';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Home(){
@@ -26,6 +27,7 @@ export default function Home(){
             <Slider></Slider>
             <Menu></Menu>
             <Marketing></Marketing>
+            <Slider2></Slider2>
             <ClientReview></ClientReview>
             <Footer></Footer>
         </>
