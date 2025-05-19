@@ -1,4 +1,4 @@
-import "../CSS/MainNav.css";
+import "../CSS/mainNav.css";
 import { Link } from "react-router";
 export default function MainNav() {
   return (
