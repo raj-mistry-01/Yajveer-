@@ -19,7 +19,7 @@ const FAQ = () => {
             answer: "Yajveer Diabetes Powder is a herbal formulation designed to help manage diabetes naturally. It works by regulating blood sugar levels, improving insulin sensitivity, and supporting overall pancreatic health. The carefully selected ingredients in the powder help maintain optimal glucose metabolism, promoting better control of diabetes."
         },
         {
-            question: "Are Amar Yajveer products safe to use?",
+            question: "Are Yajveer products safe to use?",
             answer: "Yes, all our products are made from natural and herbal ingredients, ensuring safety and efficacy. We adhere to strict quality standards and traditional Ayurvedic practices to deliver high-quality products that are safe for consumption."
         },
         {
