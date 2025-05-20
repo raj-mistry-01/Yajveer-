@@ -51,21 +51,39 @@ function AboutUs() {
           
           <div className="value-cards">
             <div className="value-card">
-              <i className="bi bi-heart-pulse"></i>
-              <h3>Quality</h3>
-              <p>We never compromise on the quality of our products, ensuring each item meets the highest standards.</p>
+                <i className="bi bi-heart-pulse"></i>
+                <h3>Quality</h3>
+                <p>We never compromise on the quality of our products, ensuring each item meets the highest standards.</p>
             </div>
 
             <div className="value-card">
-              <i className="bi bi-tree"></i>
-              <h3>Sustainability</h3>
-              <p>Our commitment to the environment is reflected in our eco-friendly practices and packaging.</p>
+                <i className="bi bi-tree"></i>
+                <h3>Sustainability</h3>
+                <p>Our commitment to the environment is reflected in our eco-friendly practices and packaging.</p>
             </div>
 
             <div className="value-card">
-              <i className="bi bi-shield-check"></i>
-              <h3>Trust</h3>
-              <p>Building lasting relationships through transparency and authenticity in everything we do.</p>
+                <i className="bi bi-shield-check"></i>
+                <h3>Trust</h3>
+                <p>Building lasting relationships through transparency and authenticity in everything we do.</p>
+            </div>
+
+            <div className="value-card">
+                <i className="bi bi-flower1"></i>
+                <h3>100% Indigenous and Ayurvedic</h3>
+                <p>Our products are purely based on traditional Ayurvedic principles and indigenous herbs.</p>
+            </div>
+
+            <div className="value-card">
+                <i className="bi bi-patch-check"></i>
+                <h3>No Harmful Side Effects</h3>
+                <p>All our products are natural and free from any harmful chemicals or adverse effects.</p>
+            </div>
+
+            <div className="value-card">
+                <i className="bi bi-shield-fill-check"></i>
+                <h3>Safe and Effective</h3>
+                <p>Scientifically tested formulations ensuring both safety and effectiveness.</p>
             </div>
           </div>
         </div>
