@@ -1,0 +1,15 @@
+{
+  "name": "yajveerbackend",
+  "version": "1.0.0",
+  "description": "This is the project about the commercial purpose of selling all kind of ayurvedic product",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev" : "nodemon src/index.js"
+  },
+  "author": "Rishi-Kukadiya",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
