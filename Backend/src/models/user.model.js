@@ -32,16 +32,7 @@ const userSchema = new Schema(
     refreshToken: {
       type: String,
       default: null,
-    },
-    isVerified: {
-      type: Boolean,
-      default: false,
-    },
-    role: {
-      type: String,
-      enum: ["user", "admin"],
-      default: "user",
-    },
+    }
   },
   {
     timestamps: true,
