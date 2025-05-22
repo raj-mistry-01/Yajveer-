@@ -34,7 +34,7 @@ export default function Footer() {
           <ul>
             <li>
               <i className="bi bi-info-circle"></i>
-              <Link to="/about">About Us</Link>
+              <Link to="/aboutUs">About Us</Link>
             </li>
             <li>
               <i className="bi bi-star"></i>
@@ -105,7 +105,7 @@ export default function Footer() {
       {/* Copyright Row */}
       <div className="footer-bottom">
         <p>
-          Copyright © 2024 Amarvira Ayurvedic Pvt. Ltd. All Rights Reserved.
+          Copyright © 2025 Yajveer Ayurvedic Pvt. Ltd. All Rights Reserved.
         </p>
       </div>
     </footer>
