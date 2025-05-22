@@ -7,7 +7,7 @@ import SignUp from './components/signup';
 import ReviewForm from './components/ReviewForm';
 import ProductDetails from './components/ProductDetails';
 import FAQ from './components/Footer/FAQ';
-// import ContactUs from './components/Footer/ContactUs';
+import ContactUs from './components/Footer/ContactUs';
 import AboutUs from './components/AboutUs';
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
             <Route path="/product/:id" element={<ProductDetails></ProductDetails>}></Route>
             <Route path="/aboutUs" element={<AboutUs></AboutUs>}></Route>
             <Route path="/faq" element={<FAQ></FAQ>}></Route>
-            {/* <Route path="/contact" element={<ContactUs></ContactUs>}></Route> */}
+            <Route path="/contact" element={<ContactUs></ContactUs>}></Route>
         </Routes>
         </>
     )
