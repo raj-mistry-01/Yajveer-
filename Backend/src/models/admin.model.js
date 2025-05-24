@@ -1,7 +1,7 @@
-import mongoose, { Schema } from "mongoose"
+import mongoose, { Schema } from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-const userSchema = new Schema(
+const AdminSchema = new Schema(
   {
     email: {
       type: String,
@@ -31,7 +31,7 @@ const userSchema = new Schema(
         message: (props) => `${props.value} is not a valid 10-digit Indian mobile number`,
       },
     },
-    refreshToken: {
+    refreshTokenadmin: {
       type: String,
       default: null,
     }
@@ -44,7 +44,7 @@ const userSchema = new Schema(
 // userSchema.index({ email: 1 });
 
 
-userSchema.pre("save", async function (next) {
+AdminSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
 
   this.password = await bcrypt.hash(this.password, 10)
@@ -52,11 +52,11 @@ userSchema.pre("save", async function (next) {
   next();
 });
 
-userSchema.methods.ispasswordcorrect = async function (password) {
+AdminSchema.methods.ispasswordcorrect = async function (password) {
   return await bcrypt.compare(password, this.password);
 }
 
-userSchema.methods.generateAccessToken = function () {
+AdminSchema.methods.generateAccessToken = function () {
   return jwt.sign(
     {
       _id: this._id,
@@ -69,7 +69,7 @@ userSchema.methods.generateAccessToken = function () {
   )
 }
 
-userSchema.methods.generateRefreshToken = function () {
+AdminSchema.methods.generateRefreshToken = function () {
   return jwt.sign(
     {
       _id: this._id
@@ -82,4 +82,4 @@ userSchema.methods.generateRefreshToken = function () {
 }
 
 
-export const User = mongoose.model("User", userSchema);
+export const Admin = mongoose.model("Admin", AdminSchema);
