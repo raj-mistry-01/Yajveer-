@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import Sidebar from "../Home/sidebar";
 import Sidebar1 from "../Home/sidebar1";
 import React, { useState } from "react";
-import "../../CSS/Footer/returnpolicy.css";
+import "../../CSS/Footer/Returnpolicy.css";
 
 export default function ReturnPolicy() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
