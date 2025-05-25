@@ -12,7 +12,7 @@ const app = express();
 // CORS middleware
 app.use(
   cors({
-    origin: "https://yajveer-cqp2.vercel.app" || "http://localhost:3000", // fallback for dev
+    origin: process.env.CORS_ORIGIN || "http://localhost:3000", // fallback for dev
     credentials: true,
   })
 );
@@ -32,10 +32,6 @@ app.use("/api/v1/users", userRouter); // e.g. /api/v1/users/register
 import productrouter from "./routes/product.routes.js"
 app.use("/api/v1/products",productrouter);
 
-export { app };
-
-
-
 app.use((err, req, res, next) => {
   const statusCode = err.statuscode || 500;
 
@@ -46,3 +42,8 @@ app.use((err, req, res, next) => {
     stack: process.env.NODE_ENV === "development" ? err.stack : undefined,
   });
 });
+
+export { app };
+
+
+
