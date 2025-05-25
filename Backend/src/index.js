@@ -17,6 +17,6 @@ connectDB()
 });
 
 
-app.get("/", (req, res) => {
-    res.send("Welcome to Cks dev");
-});
+  app.get("/api/v1", (req, res) => {
+    res.send("Welcome to CKS_dev");
+  });

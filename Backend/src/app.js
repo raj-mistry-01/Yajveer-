@@ -9,11 +9,24 @@ dotenv.config({ path: "./.env" });
 
 const app = express();
 
+const allowedOrigins = [
+  "https://yajveer-cqp2.vercel.app",
+  "http://localhost:5173",
+];
+
+// CORS middleware
 // CORS middleware
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN || "http://localhost:3000", // fallback for dev
-    credentials: true,
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("CORS not allowed for this origin"));
+      }
+    },
+    // origin: "*",
+    credentials: true, // only if you're using cookies
   })
 );
 
