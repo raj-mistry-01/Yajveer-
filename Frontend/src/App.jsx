@@ -11,6 +11,7 @@ import ContactUs from './components/Footer/ContactUs';
 import AboutUs from './components/AboutUs';
 import ScrollToTop from './components/ScrollToTop';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Returnpolicy from './components/Footer/returnpolicy';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/faq" element={<FAQ></FAQ>}></Route>
             <Route path="/contact" element={<ContactUs></ContactUs>}></Route>
             <Route path="/privacy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
+            <Route path="/returnpolicy" element={<Returnpolicy></Returnpolicy>}></Route>
         </Routes>
         </>
     )
