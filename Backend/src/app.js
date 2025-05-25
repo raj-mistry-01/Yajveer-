@@ -12,7 +12,7 @@ const app = express();
 // CORS middleware
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN || "http://localhost:3000", // fallback for dev
+    origin: "https://yajveer-cqp2.vercel.app" || "http://localhost:3000", // fallback for dev
     credentials: true,
   })
 );
