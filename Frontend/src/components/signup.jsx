@@ -54,7 +54,7 @@ export default function SignUp() {
 
     try {
       const response = await fetch(
-        "http://localhost:8000/api/v1/users/userregister",
+        "https://yajveer-backend.vercel.app/api/v1/users/userregister",
         {
           method: "POST",
           headers: {
@@ -66,7 +66,6 @@ export default function SignUp() {
 
       const result = await response.json();
       if (result.success) {
-        console.log("Rishi Kukadiya!!!");
         setPopupMessage(result.message);
         setTimeout(() => setRedirect(true), 2000);
       } else {
