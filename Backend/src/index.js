@@ -15,3 +15,8 @@ connectDB()
 .catch((err)=>{
     console.log("MongoDB connection Error !!" , err);
 });
+
+
+app.get("/", (req, res) => {
+    res.send("Welcome to Cks dev");
+});
