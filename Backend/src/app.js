@@ -1,25 +1,18 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import dotenv from "dotenv";
 
-
-// Load environment variables from .env
-dotenv.config({ path: "./.env" });
 
 const app = express();
-
 const allowedOrigins = [
   "https://yajveer-cqp2.vercel.app",
   "http://localhost:5173",
 ];
-
-// CORS middleware
 // CORS middleware
 app.use(
   cors({
     origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
+      if (!origin || allowedOrigins.includes(origin) || process.env.CORS_ORIGIN) {
         callback(null, true);
       } else {
         callback(new Error("CORS not allowed for this origin"));
@@ -40,10 +33,12 @@ app.use(cookieParser());
 
 // Import routes
 import userRouter from "./routes/user.routes.js";
-app.use("/api/v1/users", userRouter); // e.g. /api/v1/users/register
-
 import productrouter from "./routes/product.routes.js"
+
+app.use("/api/v1/users", userRouter); 
 app.use("/api/v1/products",productrouter);
+
+
 
 app.use((err, req, res, next) => {
   const statusCode = err.statuscode || 500;
@@ -55,7 +50,6 @@ app.use((err, req, res, next) => {
     stack: process.env.NODE_ENV === "development" ? err.stack : undefined,
   });
 });
-
 export { app };
 
 

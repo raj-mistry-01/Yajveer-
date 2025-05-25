@@ -4,9 +4,6 @@
   "description": "This is the project about the commercial purpose of selling all kind of ayurvedic product",
   "main": "index.js",
   "type": "module",
-  "engines": {
-    "node": "20.x"
-  }, 
   "scripts": {
     "start": "node -r dotenv/config --experimental-json-modules src/index.js",
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
