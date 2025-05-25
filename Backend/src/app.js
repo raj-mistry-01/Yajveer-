@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-
+import ServerlessHttp from "serverless-http";
 
 const app = express();
 const allowedOrigins = [
@@ -50,7 +50,9 @@ app.use((err, req, res, next) => {
     stack: process.env.NODE_ENV === "development" ? err.stack : undefined,
   });
 });
+
 export { app };
+export const handler = ServerlessHttp(app);
 
 
 
